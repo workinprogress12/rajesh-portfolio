@@ -7,59 +7,52 @@ const Contact = () => {
       <div className="contact-container">
         <h3>Contact</h3>
         <div className="contact-flex">
+
           <div className="contact-box">
             <h4>Email</h4>
             <p>
-              <a href="mailto:rajeshchittyal21@gmail.com" data-cursor="disable">
-                rajeshchittyal21@gmail.com
+              <a href="mailto:Laraibmomin.2002@gmail.com" data-cursor="disable">
+                Laraibmomin.2002@gmail.com
               </a>
             </p>
+
             <h4>Education</h4>
-            <p>BSc in Computer Science</p>
+            <p>
+              B.E. Electronics & Communication Engineering <br/>
+              Sathyabama Institute of Science and Technology
+            </p>
           </div>
+
           <div className="contact-box">
             <h4>Social</h4>
+
             <a
-              href="https://github.com/raxx21"
+              href="https://github.com/yoitsme418"
               target="_blank"
-              data-cursor="disable"
               className="contact-social"
             >
               Github <MdArrowOutward />
             </a>
+
             <a
-              href="https://www.linkedin.com/in/rajesh-chityal-2a70141b3"
+              href="https://www.linkedin.com/in/laraib-momin-a99594192"
               target="_blank"
-              data-cursor="disable"
               className="contact-social"
             >
               Linkedin <MdArrowOutward />
             </a>
-            <a
-              href="https://x.com/raxx21_official"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Twitter <MdArrowOutward />
-            </a>
-            <a
-              href="https://www.instagram.com/therajeshchityal"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Instagram <MdArrowOutward />
-            </a>
+
           </div>
+
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>Rajesh Chityal</span>
+              Designed and Developed <br /> by <span>Laraib Momin</span>
             </h2>
             <h5>
               <MdCopyright /> 2025
             </h5>
           </div>
+
         </div>
       </div>
     </div>

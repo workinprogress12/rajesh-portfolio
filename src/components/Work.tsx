@@ -5,34 +5,28 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "Solid Starters",
-    category: "Low-Code Platform",
-    tools: "Angular, Next.js, NestJS, MongoDB",
-    image: "/images/Solidx.png",
+    title: "Stock Market Prediction",
+    category: "Machine Learning Project",
+    tools: "Python, Machine Learning, Data Analysis",
+    image: "https://source.unsplash.com/800x600/?stock-market,data",
   },
   {
-    title: "Radix",
-    category: "E-Commerce",
-    tools: "Angular, Next.js, NestJS, CMS",
-    image: "/images/radix.png",
+    title: "Tomato Leaf Disease Detection",
+    category: "Computer Vision",
+    tools: "Python, CNN, Deep Learning",
+    image: "https://source.unsplash.com/800x600/?plant,ai",
   },
   {
-    title: "Bond Cancellation",
-    category: "Import-Export Automation",
-    tools: "Angular, Next.js, NestJS, Workflows",
-    image: "/images/bond.png",
+    title: "IoT Vehicle Safety System",
+    category: "IoT Project",
+    tools: "Arduino, GPS, Sensors",
+    image: "https://source.unsplash.com/800x600/?iot,car,technology",
   },
   {
-    title: "Sapphire",
-    category: "CRM Platform",
-    tools: "AngularJS, NestJS, PostgreSQL",
-    image: "/images/sapphire.png",
-  },
-  {
-    title: "Mpro",
-    category: "Insurance Platform",
-    tools: "React.js, Node.js, Microservices",
-    image: "/images/Maxlife.png",
+    title: "Data Analytics Dashboard",
+    category: "Data Analytics",
+    tools: "Python, Power BI, Data Visualization",
+    image: "https://source.unsplash.com/800x600/?data,analytics",
   },
 ];
 
@@ -70,6 +64,7 @@ const Work = () => {
         </h2>
 
         <div className="carousel-wrapper">
+
           {/* Navigation Arrows */}
           <button
             className="carousel-arrow carousel-arrow-left"
@@ -79,6 +74,7 @@ const Work = () => {
           >
             <MdArrowBack />
           </button>
+
           <button
             className="carousel-arrow carousel-arrow-right"
             onClick={goToNext}
@@ -99,24 +95,30 @@ const Work = () => {
               {projects.map((project, index) => (
                 <div className="carousel-slide" key={index}>
                   <div className="carousel-content">
+
                     <div className="carousel-info">
                       <div className="carousel-number">
                         <h3>0{index + 1}</h3>
                       </div>
+
                       <div className="carousel-details">
                         <h4>{project.title}</h4>
+
                         <p className="carousel-category">
                           {project.category}
                         </p>
+
                         <div className="carousel-tools">
                           <span className="tools-label">Tools & Features</span>
                           <p>{project.tools}</p>
                         </div>
                       </div>
                     </div>
+
                     <div className="carousel-image-wrapper">
                       <WorkImage image={project.image} alt={project.title} />
                     </div>
+
                   </div>
                 </div>
               ))}
@@ -128,14 +130,16 @@ const Work = () => {
             {projects.map((_, index) => (
               <button
                 key={index}
-                className={`carousel-dot ${index === currentIndex ? "carousel-dot-active" : ""
-                  }`}
+                className={`carousel-dot ${
+                  index === currentIndex ? "carousel-dot-active" : ""
+                }`}
                 onClick={() => goToSlide(index)}
                 aria-label={`Go to project ${index + 1}`}
                 data-cursor="disable"
               />
             ))}
           </div>
+
         </div>
       </div>
     </div>
